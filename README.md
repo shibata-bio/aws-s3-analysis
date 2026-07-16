@@ -1,3 +1,10 @@
+## ⭐ Key Features
+
+- Cloud-based data storage using AWS S3
+- Data retrieval with boto3
+- Data analysis using pandas
+- Visualization using matplotlib
+  
 # AWS S3 Data Analysis
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
