@@ -85,7 +85,7 @@ python src/s3_graph.py
 ## 📊 Output Example
 
 <p align="center">
-  <img src="images/output.png" width="700">
+  <img src="images/workflow2.png" width="700">
 </p>
 
 ---
