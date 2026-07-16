@@ -1,14 +1,28 @@
 # AWS S3 Data Analysis
 
-AWS S3とPythonを用いて、
-クラウド上のCSVデータを取得・分析・可視化したプロジェクトです。
+A data analysis project that demonstrates how to build a simple cloud-based data processing pipeline using **AWS S3** and **Python**.
+
+The project retrieves CSV files stored in Amazon S3, analyzes the data with pandas, and visualizes the results using matplotlib.
 
 ---
 
-## 使用技術
+## 📌 Overview
 
-- AWS S3
+This project was created to learn how cloud storage can be integrated into a Python-based data analysis workflow.
+
+### Workflow
+
+1. Upload CSV files to Amazon S3
+2. Retrieve the files using boto3
+3. Analyze the data with pandas
+4. Visualize the results using matplotlib
+
+---
+
+## 🛠 Tech Stack
+
 - Python
+- AWS S3
 - boto3
 - pandas
 - matplotlib
@@ -16,17 +30,45 @@ AWS S3とPythonを用いて、
 
 ---
 
-## 実装内容
+## 📂 Project Structure
 
-1. CSVファイルをAWS S3へアップロード
-2. boto3を用いてS3からデータ取得
-3. pandasでデータ分析
-4. matplotlibでグラフ作成
+```
+aws-s3-analysis/
+│
+├── data/
+├── src/
+│   ├── s3_analysis.py
+│   └── s3_graph.py
+├── images/
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 実行方法
+## 🚀 How to Run
 
 ```bash
+pip install -r requirements.txt
+
 python s3_analysis.py
 python s3_graph.py
+```
+
+---
+
+## 📖 What I Learned
+
+- Using Amazon S3 as cloud storage
+- Accessing AWS services with boto3
+- Building a data analysis workflow with pandas
+- Visualizing data using matplotlib
+- Managing Python projects with Git and GitHub
+
+---
+
+## 🔮 Future Improvements
+
+- Add automated data processing
+- Deploy the project using AWS Lambda
+- Create an interactive dashboard with Streamlit
