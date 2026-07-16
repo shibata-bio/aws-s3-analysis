@@ -1,74 +1,115 @@
 # AWS S3 Data Analysis
 
-A data analysis project that demonstrates how to build a simple cloud-based data processing pipeline using **AWS S3** and **Python**.
-
-The project retrieves CSV files stored in Amazon S3, analyzes the data with pandas, and visualizes the results using matplotlib.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS_S3-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-## 📌 Overview
+## 📖 Overview
 
-This project was created to learn how cloud storage can be integrated into a Python-based data analysis workflow.
+This project demonstrates how to build a simple cloud-based data analysis pipeline using **AWS S3** and **Python**.
 
-### Workflow
+CSV files stored in Amazon S3 are retrieved with **boto3**, analyzed using **pandas**, and visualized with **matplotlib**.
 
-1. Upload CSV files to Amazon S3
-2. Retrieve the files using boto3
-3. Analyze the data with pandas
-4. Visualize the results using matplotlib
+---
+
+## 🏗 Workflow
+
+<p align="center">
+  <img src="images/workflow.png" width="700">
+</p>
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python
-- AWS S3
-- boto3
-- pandas
-- matplotlib
-- Git / GitHub
+| Category | Technologies |
+|----------|--------------|
+| Language | Python |
+| Cloud | AWS S3 |
+| Library | boto3, pandas, matplotlib |
+| Version Control | Git / GitHub |
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 aws-s3-analysis/
 │
 ├── data/
+│   └── sample.csv
+│
+├── images/
+│   └── workflow.png
+│
 ├── src/
 │   ├── s3_analysis.py
 │   └── s3_graph.py
-├── images/
+│
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 Workflow
+
+1. Upload a CSV file to Amazon S3
+2. Retrieve the file using boto3
+3. Load the data into pandas
+4. Perform exploratory data analysis
+5. Visualize the results using matplotlib
+
+---
+
+## ▶️ How to Run
 
 ```bash
+git clone https://github.com/shibata-bio/aws-s3-analysis.git
+
+cd aws-s3-analysis
+
 pip install -r requirements.txt
 
-python s3_analysis.py
-python s3_graph.py
+python src/s3_analysis.py
+python src/s3_graph.py
 ```
+
+---
+
+## 📊 Output Example
+
+<p align="center">
+  <img src="images/output.png" width="700">
+</p>
 
 ---
 
 ## 📖 What I Learned
 
-- Using Amazon S3 as cloud storage
-- Accessing AWS services with boto3
-- Building a data analysis workflow with pandas
-- Visualizing data using matplotlib
-- Managing Python projects with Git and GitHub
+- Building a cloud-based data analysis workflow
+- Managing datasets with Amazon S3
+- Accessing AWS services using boto3
+- Processing tabular data with pandas
+- Visualizing analytical results with matplotlib
+- Organizing a Python project using Git and GitHub
 
 ---
 
 ## 🔮 Future Improvements
 
-- Add automated data processing
-- Deploy the project using AWS Lambda
-- Create an interactive dashboard with Streamlit
+- Automate the workflow using AWS Lambda
+- Deploy the application with Docker
+- Build an interactive dashboard using Streamlit
+- Integrate Amazon Athena for SQL-based analysis
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
