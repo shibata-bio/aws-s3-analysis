@@ -52,11 +52,6 @@ This project helped me understand how cloud services can be integrated into data
 ```text
 aws-s3-analysis/
 │
-├── data/
-│   └── sample.csv
-│   └── downloaded.csv
- (Refactor project structure and update README)
-│
 ├── images/
 │   ├── workflow.png
 │   └── workflow2.png
