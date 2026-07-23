@@ -54,6 +54,8 @@ aws-s3-analysis/
 │
 ├── data/
 │   └── sample.csv
+│   └── downloaded.csv
+ (Refactor project structure and update README)
 │
 ├── images/
 │   ├── workflow.png
